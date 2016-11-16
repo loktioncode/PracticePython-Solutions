@@ -10,26 +10,18 @@ Extras:
 
 '''
 
-#get the current year from OS
-# get input from user (name, age)
-# calculate how many years are left before the user turns 100 (100-current age)
-#add difference to current year
-
-#'''
-#name = raw_input("What is your name? ")
-#print "Hello %s.\n"
-#age = int(raw_input("How old are you?"))
-#'''
 
 import time
+
 now = int(time.strftime("%Y")) #Y option prints the year
 name = raw_input("What is your name? ")
 print "Hello %s " % name
+
 age = int(raw_input("How old are you?"))
 years_to_hundred = 100 - age
 future_date = years_to_hundred + now
 print "%s, you are %d years old. You will be a 100 years old in %d." %(name,age,future_date)
-#print now
+
 
 
 
