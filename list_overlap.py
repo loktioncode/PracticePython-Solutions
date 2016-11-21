@@ -13,13 +13,12 @@ Extras:
     Write this in one line of Python (don't worry if you can't figure this out at this point - we'll get to it soon)
 
 '''
+import random
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,90]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,90]
-
-c = []
-
-[c.append(elem) for elem in a if elem in b]
-print list(set(c))
-
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,90]
+#b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,90]
+a = random.sample(range(1,30), 10)
+b = random.sample(range(1,30), 12)
+c = [elem for elem in set(a) if elem in b]
+print c
 
