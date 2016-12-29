@@ -20,7 +20,7 @@ print "Hello %s " % name
 age = int(raw_input("How old are you?"))
 years_to_hundred = 100 - age
 future_date = years_to_hundred + now
-print "%s, you are %d years old. You will be a 100 years old in %d." %(name,age,future_date)
+print "%s, you are %d years old. You will be a 100 years old in %d." % (name, age, future_date)
 
 
 
