@@ -14,8 +14,12 @@ Extras:
     list a that are smaller than that number given by the user.
 
 '''
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-b = []
-b = [item for item in a if item < 5]
-print b
+def list_printer(num=5):
+    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+    b = [item for item in a if item < num]
+    return b
+
+num = int(raw_input("Enter a number "))
+print list_printer(num)
+
 

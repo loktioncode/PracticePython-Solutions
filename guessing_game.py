@@ -12,7 +12,6 @@ import random
 
 quit = ""
 num = random.randint(1, 10)
-print num
 tries = 0
 while quit != "exit":
     try:
